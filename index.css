@@ -1,0 +1,206 @@
+html, body {
+    background: #fcfdfc;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited {
+    color:black;
+}
+h1,h2,h3 {
+    text-transform: uppercase;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+img {
+    border-radius: 10px;
+}
+
+header img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+header a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50px;
+    letter-spacing: 20px;
+    font-weight: 900;
+}
+
+header h2 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.about-us {
+    display: flex;
+    margin: 100px 0;
+    min-height: 200px;
+    justify-content: space-around;
+}
+
+.about-us-text {
+    width: 40%;
+    line-height: 2;
+    padding-right: 20px;
+}
+
+.about-us img {
+    width: 50%;
+}
+
+
+.food {
+    margin: 200px 0;
+    text-align: center;
+}
+
+.food h2 {
+    margin-bottom: 50px;
+}
+
+.food .cuisines {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food .cuisine {
+    height: 275px;
+    width: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.food .cuisine img {
+    width: 100%;
+    border-radius: 50%;
+    filter: blur(3px) grayscale(30%);
+    transition: filter 0.3s ease;
+}
+
+.food .cuisine img:hover {
+    filter: none;
+}
+
+.food .cuisine span {
+    position: absolute;
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px #0d0d0d;
+}
+
+footer {
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 8px;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-bottom: 50px;
+}
+
+.social img {
+    display: flex;
+    margin: 10px 0;
+    flex-direction: column;
+    height: 50px;
+}
+
+
+@media all and (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 30px;
+        letter-spacing: 15px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 100%;
+        margin-top: 50px;
+        border-radius: 0;
+    }
+
+    header ul {
+        justify-content: space-around;
+    }
+
+    header a {
+        font-size: 14px;
+    }
+
+    .about-us {
+        margin-top: 50px;
+        margin: 2em;
+    }
+
+    .about-us-text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-us img {
+        display: none;
+    }
+
+    .food {
+        margin: 100px 0;
+    }
+
+    .cuisines {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .food h2 {
+        margin-bottom: 20px;
+    }
+
+    .food .cuisine {
+        width: 75%;
+        height: auto;
+        margin: 50px 0;
+    }
+
+    .food .cuisine img {
+        filter: none;
+    }
+
+    footer {
+        margin-bottom: 0;
+    }
+}
